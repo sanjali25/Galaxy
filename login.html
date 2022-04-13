@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CLASSIC PORCH</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main-box">
+  <div class="slider-cont">
+    <div class="signup-slider">
+      <div class="img-txt">
+        <div class="img-layer"></div>
+        
+        <img src="https://blog.hubspot.com/hubfs/Sales_Blog/real-estate-business-compressor.jpg"/>
+      </div>
+      <div class="img-txt">
+        <div class="img-layer"></div>
+        
+        <img src="https://blog.ipleaders.in/wp-content/uploads/2020/07/Real-Estate-Professionals.jpg"/>
+      </div>
+      <div class="img-txt">
+        <div class="img-layer"></div>
+        
+        <img src="https://m.economictimes.com/thumb/msid-87681263,width-1200,height-900,resizemode-4,imgsize-67134/copropinv4.jpg"/>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="form-cont">
+    
+     <div class="form form-signup">
+      <form name= "myForm" action="memberportal.html" method="post" onsubmit="validateform()">
+        <lable>E-MAIL</lable>
+        <input type="email" 
+               placeholder="Your e-mail" name="email" required>
+        <lable>PASSWORD</lable>
+        <input type="password" 
+               placeholder="Your password" name="password" required>
+        <input type="submit"
+               class="form-btn"
+               value="Sign In"
+               ></button>
+        <br><br>     
+  </div>
+  
+  <div class="col-lg-3 col-md-6">
+    <div class="info">
+      <h3>Classic Porch</h3>
+      <p>
+        A108 Sector 21 <br>
+        Gurugram, Haryana, India<br><br>
+        <strong>Phone:</strong> +91 5589 55488 55<br>
+        <strong>Email:</strong> info@example.com<br>
+      </p>
+      <div class="social-links mt-3">
+        <a href="www.twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="www.skype.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="www.linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="clear-fix"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
+<script>
+  function validateForm() {
+  let x = document.forms["myForm"]["email"].value;
+  let y = document.forms["myForm"]["password"].value;
+  if (x == "xyz@abc.com" && y == "1234abcd") {
+    return true; }
+  else{
+    alert("WRONG EMAIL AND PASSWORD");
+    return false;
+  }
+}
+</script>
+</body>
+</html>
